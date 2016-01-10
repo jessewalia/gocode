@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"github.com/gocql/gocql"
 	"log"
-	"github.com/gorilla/securecookie"
 )
 
 //Declare MUX variables
