@@ -26,7 +26,7 @@ func main() {
 //Create a struct
 type Login struct {
 	Email  string
-   	 Password string
+   	Password string
  }
 
 //PROCESS THE FORM DATA FUNCTION
@@ -55,7 +55,7 @@ func clientLogin(w http.ResponseWriter, r *http.Request) {
 	
 	//CASSANDRA DATABASE CONNECTION
 	cluster := gocql.NewCluster("127.0.0.1")
-	cluster.Keyspace = "imontessori"
+	cluster.Keyspace = "keyspaceName"
 	cqlsession, _ := cluster.CreateSession()
 	defer cqlsession.Close()
 
